@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    height: 440vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    color: black;
+}
+.lista{
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0;
+}
+.lista-item{
+    list-style: none;
+    display: block;
+    margin: 0 5px;
+    position: relative;
+    cursor: pointer;
+}
+.cabecalho-titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.cabecalho-botao{
+    background: transparent;
+    border: 0;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    font-size: 13px;
+    width: 6rem;
+}
+
+.first-botao{
+    background: transparent;
+    border: 0;
+    background-color: #ca933f;
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    font-size: 15px;
+    width: 8rem;
+    height: 2rem;
+    margin: 30px 0;
+    display: none;
+}
+.first-botao:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: 500;
+    box-shadow: .5px 1px 2px .5px rgba(0, 0, 0, 0.541);
+    transition: .7s;
+}
+
+.lista-item::after{
+    content: " ";
+    height: 2px;
+    width: 0;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+.lista-item:hover::after{
+    width: 100%;
+}
+.cabecalho-botao:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: 500;
+    box-shadow: .5px 1px 2px .5px rgba(0, 0, 0, 0.541);
+    transition: .7s;
+}
+
+.first-fit{
+    width: 100%;
+    height: 600px;
+    background-image: url(https://images.pexels.com/photos/4164843/pexels-photo-4164843.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    position: static;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+}
+.first-titulo{
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-family: 'poppins',sans-serif;
+}
+
+
+
+.texto-classes{
+  width: 100%;
+  text-align: center;
+  padding: 7rem 0;
+  font-size: 24px;
+}
+
+.grad-fit{
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+}
+.grad-fit img{
+    width: 600px;
+    padding: 13px;
+}
+.grad-fit p{
+    text-align: center;
+}
+
+.img-1{
+    position: relative;
+}
+
+.texto-centro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.grad-fit img:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out ;
+    filter: grayscale(50%);
+}
+.botao-all{
+    padding: 4rem 0;
+    width: 100%;
+    text-align: center;
+}
+.botao-ver{
+    border-radius: 2px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    background: #ca933f;
+    border: 0;
+    font-family: 'poppins',sans-serif;
+    font-weight: 500;
+}
+.botao-ver:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    background-color:#F1A638;
+}
+
+.about{
+    display: flex ;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-height: 18rem;
+    height: 100%;
+    background-color: white;
+    color: black;
+}
+.about p{
+    max-width: 600px;
+    padding: 20px 0;
+}
+
+.coments{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    background-image: url(https://images.pexels.com/photos/6046977/pexels-photo-6046977.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    position: relative;
+}   
+.img-2 img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(.7);
+}
+.texto-img2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    text-align: center;
+}
+    .texto-img2 p{
+        padding: 10px 0;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+        width: 100%;
+        position: relative;
+        padding-top: 50px;
+    }
+
+    .botao-rodape{
+        position: absolute;
+        right: 90px;
+        margin-top: 40px;
+    }
+    .botao-planos{
+        width: 200px;
+        height: 50px;
+        background-color: #f1a638;
+        border: 0;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'poppins', sans-serif;
+        box-shadow: #f1a7385b 0px 5px 15px;
+    }
+    .botao-planos:hover{
+        background-color: transparent;
+        border: 1px solid  #f1a638;
+        box-shadow: none;
+        color: #f1a638;
+        transition: .5s;
+    }
+    .social-media img{
+        width: 1.5rem;
+        margin: 0 4px;
+    }
+    footer{
+        margin-left: 10px;
+    }
+    footer p{
+        margin: 10px 0;
+    }
+
+
+    @media screen and (max-width:1100px){
+         .img-1 img{
+             width: 480px;
+         }
+         .grad-fit{
+             max-width: 100%;
+         }
+         body{
+             overflow-x: hidden;
+         }
+         .coments{
+             margin-bottom: 0;
+             background: fixed;
+             
+         }
+    }
+
+    @media (max-width:768px){
+        body{
+            height: 300vh;
+        }
+
+        .grad-fit{
+            height: auto;
+        }
+        .img-1 img{
+            width: 370px;
+        }
+    }
+
+    @media (max-width:416px){
+        body{
+            height: 390vh;
+        }
+        .lista-item{
+            display: none;
+        }
+        .cabecalho-botao{
+            display: none;
+        }
+        .cabecalho-titulo{
+            margin: 0 auto;
+        }
+
+        .first-botao{
+            display: block;
+        }
+
+
+        .botao-planos{
+            width: 100px;
+            height: 40px;
+        }
+        .botao-rodape{
+            position: absolute;
+            right: 100px;
+            margin-top: 60px;
+        }
+    }
